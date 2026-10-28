@@ -1,0 +1,14 @@
+# virtualenv created by setup_a800.sh
+.venv/
+# python caches
+__pycache__/
+*.pyc
+# training runs: checkpoints, logs, videos (regenerable with getup/train.py)
+logs/
+*.pt
+*.mp4
+# crash dumps and MuJoCo's error log written to the working directory
+core.*
+MUJOCO_LOG.TXT
+# local one-off experiments, never read by the code
+.local/

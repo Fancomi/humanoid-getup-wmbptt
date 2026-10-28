@@ -1,0 +1,11 @@
+# Tested on macOS arm64 (Apple M5, MPS) and Linux A800 (CUDA driver 12.2). On CUDA install torch from the CUDA index:
+#   pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cu126
+# then the rest of this file (setup_a800.sh does both).
+mujoco==3.17.0
+numpy==2.5.4
+imageio==2.38.1
+imageio-ffmpeg==0.6.0
+torch==2.14.1
+# Optional, only for --sim warp (GPU simulation). With a CUDA 12 driver < 13 use the cu12 wheel from
+# https://github.com/NVIDIA/warp/releases/download/v1.18.0/warp_lang-1.18.0+cu12-py3-none-manylinux_2_28_x86_64.whl
+#   mujoco-warp==3.17.0
